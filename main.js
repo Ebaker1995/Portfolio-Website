@@ -48,7 +48,11 @@ scene.add(pointLight, ambientLight);
 // const gridHelper = new THREE.GridHelper(200, 50);
 // scene.add(lightHelper, gridHelper)
 
-// const controls = new OrbitControls(camera, renderer.domElement);
+// const controls = new THREE.OrbitControls (camera, renderer.domElement);
+// controls.enableDamping = true;
+// controls.campingFactor = 0.25;
+// controls.enableZoom = true;
+
 
 function addStar() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
