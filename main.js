@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import jeff from './jeff.png';
 import space from './space.jpg';
-import moon from './moon.jpg';
+import moonpic from './moon.jpg';
 import normal from './normal.jpg';
 
 
@@ -80,7 +80,7 @@ scene.add(eric);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load(moon);
+const moonTexture = new THREE.TextureLoader().load(moonpic);
 const normalTexture = new THREE.TextureLoader().load(normal);
 
 const moon = new THREE.Mesh(
