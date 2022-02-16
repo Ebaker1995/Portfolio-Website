@@ -1,6 +1,7 @@
 import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import jeff from './jeff.png'
 
 // Setup
 
@@ -65,7 +66,7 @@ scene.background = spaceTexture;
 
 // Avatar
 
-const ericTexture = new THREE.TextureLoader().load('jeff.png');
+const ericTexture = new THREE.TextureLoader().load(jeff);
 
 const eric = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: ericTexture }));
 
